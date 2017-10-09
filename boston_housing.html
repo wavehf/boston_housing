@@ -11803,7 +11803,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 载入此项目所需要的库</span>
@@ -11827,7 +11827,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 载入波士顿房屋的数据集</span>
@@ -11894,7 +11894,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#TODO 1</span>
@@ -11954,7 +11954,7 @@ Standard deviation of prices: $165,171.13
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
@@ -12695,7 +12695,7 @@ IYRoFQmREEKIVpEQCSGEaJX/D/LLNETyM2dgAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO 2</span>
@@ -12762,7 +12762,7 @@ IYRoFQmREEKIVpEQCSGEaJX/D/LLNETyM2dgAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO 3</span>
@@ -12784,7 +12784,7 @@ IYRoFQmREEKIVpEQCSGEaJX/D/LLNETyM2dgAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO 3 可选</span>
@@ -12793,9 +12793,9 @@ IYRoFQmREEKIVpEQCSGEaJX/D/LLNETyM2dgAAAAAElFTkSuQmCC
 
 <span class="k">def</span> <span class="nf">performance_metric2</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;计算并返回预测值相比于预测值的分数&quot;&quot;&quot;</span>
-    <span class="n">ss_res</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([(</span><span class="n">y_true</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">-</span> <span class="n">y_predict</span><span class="p">[</span><span class="n">x</span><span class="p">])</span><span class="o">^</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y_true</span><span class="p">))])</span>
+    <span class="n">ss_res</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([(</span><span class="n">y_true</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">-</span> <span class="n">y_predict</span><span class="p">[</span><span class="n">x</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y_true</span><span class="p">))])</span>
     <span class="n">y_true_bar</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">y_true</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">y_true</span><span class="p">)</span>
-    <span class="n">ss_tot</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([(</span><span class="n">y_true</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">-</span> <span class="n">y_true_bar</span><span class="p">)</span><span class="o">^</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y_true</span><span class="p">))])</span>
+    <span class="n">ss_tot</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([(</span><span class="n">y_true</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">-</span> <span class="n">y_true_bar</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y_true</span><span class="p">))])</span>
     <span class="n">score</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">ss_res</span><span class="o">/</span><span class="n">ss_tot</span>
 
     <span class="k">return</span> <span class="n">score</span>
@@ -12848,7 +12848,7 @@ IYRoFQmREEKIVpEQCSGEaJX/D/LLNETyM2dgAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># 计算这个模型的预测结果的决定系数</span>
@@ -14512,7 +14512,9 @@ REQCRYlPREQCRYlPREQC5f8B2cStRoCBXJ0AAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#38382;&#39064;-7---&#22238;&#31572;:">&#38382;&#39064; 7 - &#22238;&#31572;:<a class="anchor-link" href="#&#38382;&#39064;-7---&#22238;&#31572;:">&#182;</a></h3><p><em>网格搜索法就是对不同参数值的组合进行测试，挑出最佳的参数值组合</em></p>
+<h3 id="&#38382;&#39064;-7---&#22238;&#31572;:">&#38382;&#39064; 7 - &#22238;&#31572;:<a class="anchor-link" href="#&#38382;&#39064;-7---&#22238;&#31572;:">&#182;</a></h3><h4 id="review&#34917;&#20805;">review&#34917;&#20805;<a class="anchor-link" href="#review&#34917;&#20805;">&#182;</a></h4><h4 id="&#32593;&#26684;&#25628;&#32034;&#20013;&#30340;&#32593;&#26684;&#26159;&#20160;&#20040;&#24847;&#24605;&#65311;">&#32593;&#26684;&#25628;&#32034;&#20013;&#30340;&#32593;&#26684;&#26159;&#20160;&#20040;&#24847;&#24605;&#65311;<a class="anchor-link" href="#&#32593;&#26684;&#25628;&#32034;&#20013;&#30340;&#32593;&#26684;&#26159;&#20160;&#20040;&#24847;&#24605;&#65311;">&#182;</a></h4><h4 id="&#23427;&#25628;&#32034;&#30340;&#26159;&#19968;&#20010;&#31639;&#27861;&#25152;&#26377;&#21487;&#33021;&#30340;&#21442;&#25968;&#32452;&#21512;&#65292;&#36824;&#26159;&#25105;&#20204;&#32473;&#23450;&#21442;&#25968;&#19979;&#65292;&#25152;&#26377;&#21487;&#33021;&#30340;&#32452;&#21512;&#65311;">&#23427;&#25628;&#32034;&#30340;&#26159;&#19968;&#20010;&#31639;&#27861;&#25152;&#26377;&#21487;&#33021;&#30340;&#21442;&#25968;&#32452;&#21512;&#65292;&#36824;&#26159;&#25105;&#20204;&#32473;&#23450;&#21442;&#25968;&#19979;&#65292;&#25152;&#26377;&#21487;&#33021;&#30340;&#32452;&#21512;&#65311;<a class="anchor-link" href="#&#23427;&#25628;&#32034;&#30340;&#26159;&#19968;&#20010;&#31639;&#27861;&#25152;&#26377;&#21487;&#33021;&#30340;&#21442;&#25968;&#32452;&#21512;&#65292;&#36824;&#26159;&#25105;&#20204;&#32473;&#23450;&#21442;&#25968;&#19979;&#65292;&#25152;&#26377;&#21487;&#33021;&#30340;&#32452;&#21512;&#65311;">&#182;</a></h4><h4 id="&#23427;&#21448;&#26159;&#26681;&#25454;&#20160;&#20040;&#24471;&#21040;&#26368;&#20248;&#32452;&#21512;&#21602;&#65311;&#25105;&#20204;&#26159;&#21542;&#38656;&#35201;&#25351;&#23450;&#35780;&#20215;&#20989;&#25968;&#21602;&#65311;">&#23427;&#21448;&#26159;&#26681;&#25454;&#20160;&#20040;&#24471;&#21040;&#26368;&#20248;&#32452;&#21512;&#21602;&#65311;&#25105;&#20204;&#26159;&#21542;&#38656;&#35201;&#25351;&#23450;&#35780;&#20215;&#20989;&#25968;&#21602;&#65311;<a class="anchor-link" href="#&#23427;&#21448;&#26159;&#26681;&#25454;&#20160;&#20040;&#24471;&#21040;&#26368;&#20248;&#32452;&#21512;&#21602;&#65311;&#25105;&#20204;&#26159;&#21542;&#38656;&#35201;&#25351;&#23450;&#35780;&#20215;&#20989;&#25968;&#21602;&#65311;">&#182;</a></h4><p><em>网格搜索法就是对不同参数值的组合进行测试，挑出最佳的参数值组合</em></p>
+<p><em>关于网格，我的理解就是我们给定的参数的所有组合</em></p>
+<p><em>网格搜索算法是遍历所有网格，在每个网格中进行K折交叉验证，通过我们给定的评价函数评出最优组合</em></p>
 
 </div>
 </div>
@@ -14536,10 +14538,11 @@ REQCRYlPREQCRYlPREQC5f8B2cStRoCBXJ0AAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#38382;&#39064;-8---&#22238;&#31572;&#65306;">&#38382;&#39064; 8 - &#22238;&#31572;&#65306;<a class="anchor-link" href="#&#38382;&#39064;-8---&#22238;&#31572;&#65306;">&#182;</a></h3><p><em>K折交叉验证法是将数据集分成k个子集，每个子集均做一次测试集，其余的作为训练集。k-CV交叉验证重复k次，每次选择一个子集作为测试集，并将k次的平均交叉验证识别率作为结果。</em></p>
+<h3 id="&#38382;&#39064;-8---&#22238;&#31572;&#65306;">&#38382;&#39064; 8 - &#22238;&#31572;&#65306;<a class="anchor-link" href="#&#38382;&#39064;-8---&#22238;&#31572;&#65306;">&#182;</a></h3><h4 id="review&#34917;&#20805;">review&#34917;&#20805;<a class="anchor-link" href="#review&#34917;&#20805;">&#182;</a></h4><h4 id="&#8220;K&#25240;&#20132;&#21449;&#39564;&#35777;&#27861;&#26159;&#23558;&#25968;&#25454;&#38598;&#20998;&#25104;k&#20010;&#23376;&#38598;&#8221;-&#19981;&#20934;&#30830;&#12290;K&#25240;&#20132;&#21449;&#39564;&#35777;&#20998;&#21106;&#30340;&#26159;&#35757;&#32451;&#25968;&#25454;&#36824;&#26159;&#20840;&#37096;&#25968;&#25454;&#65311;&#65288;&#25552;&#31034;&#65306;reg-=-fit_model(X_train,-y_train)&#65289;">&#8220;K&#25240;&#20132;&#21449;&#39564;&#35777;&#27861;&#26159;&#23558;&#25968;&#25454;&#38598;&#20998;&#25104;k&#20010;&#23376;&#38598;&#8221; &#19981;&#20934;&#30830;&#12290;K&#25240;&#20132;&#21449;&#39564;&#35777;&#20998;&#21106;&#30340;&#26159;&#35757;&#32451;&#25968;&#25454;&#36824;&#26159;&#20840;&#37096;&#25968;&#25454;&#65311;&#65288;&#25552;&#31034;&#65306;reg = fit_model(X_train, y_train)&#65289;<a class="anchor-link" href="#&#8220;K&#25240;&#20132;&#21449;&#39564;&#35777;&#27861;&#26159;&#23558;&#25968;&#25454;&#38598;&#20998;&#25104;k&#20010;&#23376;&#38598;&#8221;-&#19981;&#20934;&#30830;&#12290;K&#25240;&#20132;&#21449;&#39564;&#35777;&#20998;&#21106;&#30340;&#26159;&#35757;&#32451;&#25968;&#25454;&#36824;&#26159;&#20840;&#37096;&#25968;&#25454;&#65311;&#65288;&#25552;&#31034;&#65306;reg-=-fit_model(X_train,-y_train)&#65289;">&#182;</a></h4><h4 id="&#40664;&#35748;&#24773;&#20917;&#19979;-Kfold-&#26159;&#23545;&#25968;&#25454;&#25353;&#39034;&#24207;&#20999;&#20998;&#36824;&#26159;&#38543;&#26426;&#20999;&#20998;&#65311;">&#40664;&#35748;&#24773;&#20917;&#19979; Kfold &#26159;&#23545;&#25968;&#25454;&#25353;&#39034;&#24207;&#20999;&#20998;&#36824;&#26159;&#38543;&#26426;&#20999;&#20998;&#65311;<a class="anchor-link" href="#&#40664;&#35748;&#24773;&#20917;&#19979;-Kfold-&#26159;&#23545;&#25968;&#25454;&#25353;&#39034;&#24207;&#20999;&#20998;&#36824;&#26159;&#38543;&#26426;&#20999;&#20998;&#65311;">&#182;</a></h4><h4 id="&#32593;&#26684;&#25628;&#32034;&#26102;&#22914;&#26524;&#19981;&#20351;&#29992;&#20132;&#21449;&#39564;&#35777;&#20250;&#23548;&#33268;&#26368;&#20248;&#21442;&#25968;&#32452;&#21512;&#24182;&#19981;&#26159;&#26368;&#20248;&#30340;&#65292;&#21487;&#33021;&#26159;&#36807;&#25311;&#21512;&#30340;&#21442;&#25968;&#65292;&#22914;&#26524;&#26159;&#36807;&#25311;&#21512;&#30340;&#21442;&#25968;&#22312;&#20132;&#21449;&#39564;&#35777;&#36807;&#31243;&#20013;&#20250;&#24471;&#21040;&#36739;&#20302;&#30340;&#20998;&#25968;&#65292;&#20174;&#32780;&#19981;&#20250;&#34987;&#36873;&#20013;&#12290;&#35828;&#30340;&#24456;&#22909;&#12290;&#20294;&#26159;&#38656;&#35201;&#35299;&#37322;&#19968;&#19979;&#20026;&#20160;&#20040;&#21069;&#32773;&#21487;&#33021;&#36807;&#25311;&#21512;&#65292;&#21518;&#32773;&#20250;&#24471;&#21040;&#36739;&#20302;&#30340;&#20998;&#25968;&#21602;&#65311;">&#32593;&#26684;&#25628;&#32034;&#26102;&#22914;&#26524;&#19981;&#20351;&#29992;&#20132;&#21449;&#39564;&#35777;&#20250;&#23548;&#33268;&#26368;&#20248;&#21442;&#25968;&#32452;&#21512;&#24182;&#19981;&#26159;&#26368;&#20248;&#30340;&#65292;&#21487;&#33021;&#26159;&#36807;&#25311;&#21512;&#30340;&#21442;&#25968;&#65292;&#22914;&#26524;&#26159;&#36807;&#25311;&#21512;&#30340;&#21442;&#25968;&#22312;&#20132;&#21449;&#39564;&#35777;&#36807;&#31243;&#20013;&#20250;&#24471;&#21040;&#36739;&#20302;&#30340;&#20998;&#25968;&#65292;&#20174;&#32780;&#19981;&#20250;&#34987;&#36873;&#20013;&#12290;&#35828;&#30340;&#24456;&#22909;&#12290;&#20294;&#26159;&#38656;&#35201;&#35299;&#37322;&#19968;&#19979;&#20026;&#20160;&#20040;&#21069;&#32773;&#21487;&#33021;&#36807;&#25311;&#21512;&#65292;&#21518;&#32773;&#20250;&#24471;&#21040;&#36739;&#20302;&#30340;&#20998;&#25968;&#21602;&#65311;<a class="anchor-link" href="#&#32593;&#26684;&#25628;&#32034;&#26102;&#22914;&#26524;&#19981;&#20351;&#29992;&#20132;&#21449;&#39564;&#35777;&#20250;&#23548;&#33268;&#26368;&#20248;&#21442;&#25968;&#32452;&#21512;&#24182;&#19981;&#26159;&#26368;&#20248;&#30340;&#65292;&#21487;&#33021;&#26159;&#36807;&#25311;&#21512;&#30340;&#21442;&#25968;&#65292;&#22914;&#26524;&#26159;&#36807;&#25311;&#21512;&#30340;&#21442;&#25968;&#22312;&#20132;&#21449;&#39564;&#35777;&#36807;&#31243;&#20013;&#20250;&#24471;&#21040;&#36739;&#20302;&#30340;&#20998;&#25968;&#65292;&#20174;&#32780;&#19981;&#20250;&#34987;&#36873;&#20013;&#12290;&#35828;&#30340;&#24456;&#22909;&#12290;&#20294;&#26159;&#38656;&#35201;&#35299;&#37322;&#19968;&#19979;&#20026;&#20160;&#20040;&#21069;&#32773;&#21487;&#33021;&#36807;&#25311;&#21512;&#65292;&#21518;&#32773;&#20250;&#24471;&#21040;&#36739;&#20302;&#30340;&#20998;&#25968;&#21602;&#65311;">&#182;</a></h4><p><em>K折交叉验证法是将<strong>训练数据集随机</strong>分成k个子集，每个子集均做一次测试集，其余的作为训练集。k-CV交叉验证重复k次，每次选择一个子集作为测试集，并将k次的平均交叉验证识别率作为结果。</em></p>
 <p><em>GridSearchCV对每种参数组合进行训练并结合交叉验证结果评分，最终选出评分最高的那组参数</em></p>
 <p><em>cv_results_属性可以告诉我们每种参数组合的结果</em></p>
-<p><em>网格搜索时如果不使用交叉验证会导致最优参数组合并不是最优的，可能是过拟合的参数，如果是过拟合的参数在交叉验证过程中会得到较低的分数，从而不会被选中</em></p>
+<p><em>网格搜索时如果不使用交叉验证会导致最优参数组合并不是最优的，可能是过拟合的参数，如果是过拟合的参数在交叉验证过程中会得到较低的分数，从而不会被选中</em>
+<em>在k折验证过程中，测试集和训练集是独立的，所以当训练集中产生过拟合时就不能泛化到测试集上，那么在测试集上的表现就很差，就会出现较低的分数</em></p>
 
 </div>
 </div>
@@ -14823,7 +14826,17 @@ Predicted selling price for Client 3&#39;s home: $937,230.00
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#38382;&#39064;-10---&#22238;&#31572;&#65306;">&#38382;&#39064; 10 - &#22238;&#31572;&#65306;<a class="anchor-link" href="#&#38382;&#39064;-10---&#22238;&#31572;&#65306;">&#182;</a></h3><p><em>建议客户1~3的房屋销售的价格分别为 411,417.39， 230,828.57， 937,230.00</em></p>
+<h3 id="&#38382;&#39064;-10---&#22238;&#31572;&#65306;">&#38382;&#39064; 10 - &#22238;&#31572;&#65306;<a class="anchor-link" href="#&#38382;&#39064;-10---&#22238;&#31572;&#65306;">&#182;</a></h3><p><em>建议客户1~3的房屋销售的价格分别为 \$411,417.39， \$230,828.57， \$937,230.00</em></p>
+<p><em>根据统计数据</em></p>
+<p><em>Minimum price: \$105,000.00</em></p>
+<p><em>Maximum price: \$1,024,800.00</em></p>
+<p><em>Mean price: \$454,342.94</em></p>
+<p><em>Median price \$438,900.00</em></p>
+<p><em>Standard deviation of prices: \$165,171</em></p>
+<p><em>预测的房价在Minimum price和Maximum price之间，区间合理</em></p>
+<p><em>客户1的房间数量和社区贫困指数都更接近社会平均水平，那么客户1的房价接近房价的Median price也是合理的</em></p>
+<p><em>客户2的房间数和社区贫困指数都更低于社会平均水平，客户2的房价接近Minimum price也是合理的</em></p>
+<p><em>客户3的房间数和社区贫困指数都远高于客户1和客户2，客户1的房价接近Maximum price也是合理的</em></p>
 <p><em>我认为是合理的，和之前的判断一致，房间数量越多价格越高，社区贫困指数越高价格越低，学生-老师比例对房价影响并不大</em></p>
 
 </div>
